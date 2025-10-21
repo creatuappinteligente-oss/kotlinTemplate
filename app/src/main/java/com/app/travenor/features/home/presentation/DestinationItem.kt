@@ -41,17 +41,19 @@ import coil3.request.ImageRequest
 import coil3.request.crossfade
 import com.app.travenor.R
 import com.app.travenor.sample_data.Place
+import com.app.travenor.sample_data.placesList
 import com.app.travenor.ui.theme.ratingBarColor
 
 @Composable
 fun DestinationItem(
     place: Place,
     onBookmarkClick: () -> Unit,
-    onItemClick: () -> Unit
+    onItemClick: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
     val isBookmarked = remember { mutableStateOf(place.isBookMarked) }
     Column(
-        modifier = Modifier
+        modifier = modifier
             .padding(1.dp)
             .shadow(
                 elevation = 3.dp,
@@ -222,25 +224,7 @@ fun getPlaceHolderImage(index: Int): Int {
 @Composable
 fun DestinationItemPreview() {
     DestinationItem(
-        Place(
-            id = 1,
-            name = "Sunrise Oasis Resort",
-            location = "Junagadh, Gujarat",
-            amount = AnnotatedString("$672"),
-            rating = 4,
-            reviewerProfiles = listOf(
-                "https://img.freepik.com/premium-photo/cartoon-boy-with-glasses-smiling-modern-line-icon-avatar_1106493-512908.jpg",
-                "https://img.freepik.com/premium-vector/student-avatar-illustration-user-profile-icon-youth-avatar_118339-4405.jpg",
-                "https://img.freepik.com/premium-vector/businessman-avatar-illustration-cartoon-user-portrait-user-profile-icon_118339-5502.jpg",
-                "https://picsbed.top/file/oFWsedso%2FpQ9yeDpEvaEqEO4UvrWajYdGOem1ePC9Is%3D",
-                "https://png.pngtree.com/png-clipart/20240723/original/pngtree-flat-people-man-icon-illustration-vector-png-image_15612321.png",
-                "https://cdn-icons-png.flaticon.com/512/2919/2919906.png",
-                "https://img.freepik.com/premium-photo/profile-icon-white-background_941097-162565.jpg"
-            ),
-            imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO54ZW1yyW2bf8VoCetfFbmT333QbRq6ojEQ&s",
-            placeHolder = R.drawable.search_img_1,
-            isBookMarked = false
-        ),
+        place = placesList[1],
         {},
         {  }
     )
