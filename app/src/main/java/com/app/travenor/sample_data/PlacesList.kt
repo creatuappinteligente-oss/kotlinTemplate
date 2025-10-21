@@ -225,6 +225,16 @@ val placesList = listOf(
         isBookMarked = true,
         imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69nti-8_ijCzxKdRYCZfKH7wfL4DT7UFltA&s",
         placeHolder = R.drawable.search_img_4
+    ),
+    Place(
+        id = 17,
+        name = "Azure Bay Hotel",
+        location = "Surat, Gujarat",
+        amount = getAmount("$880"),
+        rating = 5,
+        isBookMarked = false,
+        imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4g3o0i-l2pXnI0QXp-a7R3T2Tq4q-JgG-gA&s",
+        placeHolder = R.drawable.search_img_1
     )
 )
 

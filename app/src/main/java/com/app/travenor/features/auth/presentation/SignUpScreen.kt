@@ -32,7 +32,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.PasswordVisualTransformation
@@ -72,7 +71,7 @@ fun SignUpScreen(
             ) {
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.KeyboardArrowLeft,
-                    contentDescription = "Back Icon"
+                    contentDescription = "Ícono de retroceso"
                 )
             }
 
@@ -80,7 +79,7 @@ fun SignUpScreen(
                 modifier = Modifier
                     .padding(top = 36.dp)
                     .align(Alignment.CenterHorizontally),
-                text = "Sign up now",
+                text = "Regístrate ahora",
                 fontSize = 26.sp,
                 fontWeight = FontWeight.SemiBold,
                 lineHeight = 34.sp,
@@ -91,7 +90,7 @@ fun SignUpScreen(
                 modifier = Modifier
                     .padding(top = 12.dp)
                     .align(Alignment.CenterHorizontally),
-                text = "Please fill the details and create account",
+                text = "Por favor, completa los detalles y crea una cuenta",
                 fontSize = 16.sp,
                 lineHeight = 20.sp,
                 fontWeight = FontWeight.Normal,
@@ -101,7 +100,7 @@ fun SignUpScreen(
             OutlinedTextField(
                 value = nameText,
                 onValueChange = { nameText = it },
-                label = { Text(text = stringResource(id = R.string.name)) },
+                label = { Text(text = "Nombre") },
                 singleLine = true,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -111,7 +110,7 @@ fun SignUpScreen(
             OutlinedTextField(
                 value = emailText,
                 onValueChange = { emailText = it },
-                label = { Text(text = stringResource(id = R.string.email)) },
+                label = { Text(text = "Correo electrónico") },
                 singleLine = true,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -121,7 +120,7 @@ fun SignUpScreen(
             OutlinedTextField(
                 value = passwordText,
                 onValueChange = { passwordText = it },
-                label = { Text(text = stringResource(id = R.string.password)) },
+                label = { Text(text = "Contraseña") },
                 singleLine = true,
                 trailingIcon = {
                     val icon = if (isPasswordVisible) Icons.Filled.Visibility
@@ -130,7 +129,7 @@ fun SignUpScreen(
                     IconButton(onClick = { isPasswordVisible = !isPasswordVisible }) {
                         Icon(
                             imageVector = icon,
-                            contentDescription = stringResource(id = R.string.password_visibility_toggle),
+                            contentDescription = "Alternar visibilidad de contraseña",
                             tint = MaterialTheme.colorScheme.primary
                         )
                     }
@@ -142,14 +141,14 @@ fun SignUpScreen(
             )
 
             Text(
-                text = "Password must be 8 character",
+                text = "La contraseña debe tener al menos 8 caracteres",
                 color = MaterialTheme.colorScheme.tertiary,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.Normal,
                 lineHeight = 16.sp
             )
 
-            Text(text = "Sign Up",
+            Text(text = "Registrarse",
                 textAlign = TextAlign.Center,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -167,14 +166,14 @@ fun SignUpScreen(
                 modifier = Modifier.align(alignment = Alignment.CenterHorizontally),
             ) {
                 Text(
-                    text = "Already have an account",
+                    text = "¿Ya tienes una cuenta?",
                     color = MaterialTheme.colorScheme.tertiary,
                     fontSize = 14.sp,
                     lineHeight = 16.sp,
                     fontWeight = FontWeight.Normal
                 )
                 Text(
-                    text = "Sign in",
+                    text = "Inicia sesión",
                     color = MaterialTheme.colorScheme.secondary,
                     fontSize = 14.sp,
                     modifier = Modifier
@@ -188,7 +187,7 @@ fun SignUpScreen(
             }
 
             Text(
-                text = "Or Connect",
+                text = "O conéctate con",
                 color = MaterialTheme.colorScheme.onSurface,
                 fontSize = 14.sp,
                 modifier = Modifier
@@ -205,15 +204,15 @@ fun SignUpScreen(
         ) {
             Image(
                 imageVector = ImageVector.vectorResource(id = R.drawable.ic_facebook_logo),
-                contentDescription = "FaceBook Logo"
+                contentDescription = "Logo de Facebook"
             )
             Image(
                 imageVector = ImageVector.vectorResource(id = R.drawable.ic_instagram_logo),
-                contentDescription = "Instagram Logo"
+                contentDescription = "Logo de Instagram"
             )
             Image(
                 imageVector = ImageVector.vectorResource(id = R.drawable.ic_twitter_logo),
-                contentDescription = "Instagram Logo"
+                contentDescription = "Logo de Twitter"
             )
         }
     }
