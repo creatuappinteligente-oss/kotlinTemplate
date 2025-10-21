@@ -14,28 +14,28 @@ fun getOnBoardingDetailList(): List<OnBoardingDetail> {
         OnBoardingDetail(
             image = R.drawable.onboarding_1,
             titleText = getAnnotatedString(
-                otherText = "Bienvenido a ",
-                mainText = "nuestra app"
+                otherText = "Título de la ",
+                mainText = "Página Uno"
             ),
-            detailText = "Aquí encontrarás una descripción breve y atractiva de lo que hace esta aplicación en la primera página.",
+            detailText = "Descripción detallada para la primera página. Este texto puede ser reemplazado fácilmente.",
             buttonText = "Siguiente",
             descriptionOfImage = "Página 1"
         ), OnBoardingDetail(
             image = R.drawable.onboarding_2,
             titleText = getAnnotatedString(
-                otherText = "Descubre ",
-                mainText = "funciones increíbles"
+                otherText = "Título de la ",
+                mainText = "Página Dos"
             ),
-            detailText = "Explora las características principales y cómo pueden beneficiarte en tu día a día.",
+            detailText = "Descripción detallada para la segunda página. Este texto también es personalizable.",
             buttonText = "Siguiente",
             descriptionOfImage = "Página 2"
         ), OnBoardingDetail(
             image = R.drawable.onboarding_3,
             titleText = getAnnotatedString(
-                otherText = "Comienza tu ",
-                mainText = "experiencia"
+                otherText = "Título de la ",
+                mainText = "Página Tres"
             ),
-            detailText = "Estás a solo un paso de disfrutar de todo lo que hemos preparado para ti.",
+            detailText = "Descripción final para la tercera página, guiando al usuario al siguiente paso.",
             buttonText = "Empezar",
             descriptionOfImage = "Página 3"
         )

@@ -79,7 +79,7 @@ fun HomeScreen(
                     placeholder = painterResource(id = R.drawable.ic_profile_img),
                     error = painterResource(id = R.drawable.ic_profile_img),
                     fallback = painterResource(id = R.drawable.ic_profile_img),
-                    contentDescription = "Icono de perfil"
+                    contentDescription = "Ícono de perfil"
                 )
                 Text(
                     text = "Leonardo",
@@ -97,7 +97,7 @@ fun HomeScreen(
             ) {
                 Icon(
                     painter = painterResource(id = R.drawable.ic_notification_icon),
-                    contentDescription = "Icono de notificación"
+                    contentDescription = "Ícono de notificación"
                 )
             }
         }
@@ -119,7 +119,7 @@ fun HomeScreen(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Text(
-                text = "Mejores destinos",
+                text = "Mejores Destinos",
                 fontSize = 20.sp,
                 lineHeight = 28.sp,
                 color = MaterialTheme.colorScheme.onSurface,

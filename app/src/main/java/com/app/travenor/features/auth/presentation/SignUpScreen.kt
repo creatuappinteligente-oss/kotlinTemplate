@@ -32,7 +32,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.PasswordVisualTransformation
@@ -72,7 +71,7 @@ fun SignUpScreen(
             ) {
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.KeyboardArrowLeft,
-                    contentDescription = "Icono de retroceso"
+                    contentDescription = "Ícono de retroceso"
                 )
             }
 
@@ -142,7 +141,7 @@ fun SignUpScreen(
             )
 
             Text(
-                text = "La contraseña debe tener 8 caracteres",
+                text = "La contraseña debe tener al menos 8 caracteres",
                 color = MaterialTheme.colorScheme.tertiary,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.Normal,

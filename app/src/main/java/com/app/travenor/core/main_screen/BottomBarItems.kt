@@ -23,7 +23,7 @@ val items = listOf(
     ),
     BottomNavigationItem(
         appRoute = PopularAppRoute,
-        title = "Popular",
+        title = "Populares",
         icon = R.drawable.ic_popular,
     ),
     BottomNavigationItem(
@@ -33,7 +33,7 @@ val items = listOf(
     ),
     BottomNavigationItem(
         appRoute = FavouritesAppRoute,
-        title = "Guardados",
+        title = "Favoritos",
         icon = R.drawable.ic_bookmark_icon,
     ),
     BottomNavigationItem(

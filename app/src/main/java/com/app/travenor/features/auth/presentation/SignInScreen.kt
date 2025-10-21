@@ -73,7 +73,7 @@ fun SignInScreen(
             ) {
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.KeyboardArrowLeft,
-                    contentDescription = "Icono de retroceso"
+                    contentDescription = "Ícono de retroceso"
                 )
             }
 
@@ -133,7 +133,7 @@ fun SignInScreen(
             )
 
             Text(
-                text = "¿Olvidaste tu contraseña?",
+                text = "¿Olvidaste la contraseña?",
                 color = MaterialTheme.colorScheme.secondary,
                 modifier = Modifier
                     .align(Alignment.End)
@@ -148,7 +148,7 @@ fun SignInScreen(
                 lineHeight = 16.sp
             )
 
-            Text(text = "Iniciar sesión",
+            Text(text = "Iniciar Sesión",
                 textAlign = TextAlign.Center,
                 modifier = Modifier
                     .fillMaxWidth()
