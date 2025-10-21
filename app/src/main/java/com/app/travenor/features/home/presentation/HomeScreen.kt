@@ -26,6 +26,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -44,7 +45,7 @@ import com.app.travenor.sample_data.toDetailPlace
 
 sealed class HomeSection {
     data class Header(val userName: String, val profileUrl: String) : HomeSection()
-    data class Title(val text: String) : HomeSection()
+    data class Title(val text: AnnotatedString) : HomeSection()
     data class DestinationsCarousel(val title: String, val places: List<Place>) : HomeSection()
     data class PopularPlacesGrid(val title: String, val places: List<Place>, val columns: Int = 2) : HomeSection()
 }
@@ -159,7 +160,7 @@ fun HeaderSection(
 }
 
 @Composable
-fun TitleSection(title: String) {
+fun TitleSection(title: AnnotatedString) {
     Text(
         modifier = Modifier
             .padding(top = 26.dp),
