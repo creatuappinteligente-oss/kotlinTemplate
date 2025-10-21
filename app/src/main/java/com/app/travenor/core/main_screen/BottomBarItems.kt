@@ -18,7 +18,7 @@ data class BottomNavigationItem(
 val items = listOf(
     BottomNavigationItem(
         appRoute = HomeAppRoute,
-        title = "Home",
+        title = "Inicio",
         icon = R.drawable.ic_home,
     ),
     BottomNavigationItem(
@@ -28,17 +28,17 @@ val items = listOf(
     ),
     BottomNavigationItem(
         appRoute = SearchAppRoute,
-        title = "Search",
+        title = "Buscar",
         icon = R.drawable.ic_search,
     ),
     BottomNavigationItem(
         appRoute = FavouritesAppRoute,
-        title = "Favourites",
+        title = "Guardados",
         icon = R.drawable.ic_bookmark_icon,
     ),
     BottomNavigationItem(
         appRoute = ProfileAppRoute,
-        title = "Profile",
+        title = "Perfil",
         icon = R.drawable.ic_profile,
     )
 )

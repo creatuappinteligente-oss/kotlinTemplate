@@ -14,30 +14,30 @@ fun getOnBoardingDetailList(): List<OnBoardingDetail> {
         OnBoardingDetail(
             image = R.drawable.onboarding_1,
             titleText = getAnnotatedString(
-                otherText = "La vida es corta y el mundo es ",
-                mainText = "amplio"
+                otherText = "Bienvenido a ",
+                mainText = "nuestra app"
             ),
-            detailText = "En Friends Tours and Travel, personalizamos viajes de confianza a destinos de todo el mundo.",
+            detailText = "Aquí encontrarás una descripción breve y atractiva de lo que hace esta aplicación en la primera página.",
             buttonText = "Siguiente",
-            descriptionOfImage = "Page 1"
+            descriptionOfImage = "Página 1"
         ), OnBoardingDetail(
             image = R.drawable.onboarding_2,
             titleText = getAnnotatedString(
-                otherText = "Es un mundo grande ahí fuera, ve a ",
-                mainText = "explorar"
+                otherText = "Descubre ",
+                mainText = "funciones increíbles"
             ),
-            detailText = "Para aprovechar al máximo tu aventura, solo tienes que ir a donde más te guste. ¡Te estamos esperando!",
+            detailText = "Explora las características principales y cómo pueden beneficiarte en tu día a día.",
             buttonText = "Siguiente",
-            descriptionOfImage = "Page 2"
+            descriptionOfImage = "Página 2"
         ), OnBoardingDetail(
             image = R.drawable.onboarding_3,
             titleText = getAnnotatedString(
-                otherText = "Siempre es el viaje sobre el ",
-                mainText = "destino"
+                otherText = "Comienza tu ",
+                mainText = "experiencia"
             ),
-            detailText = "Ya sea tu primer paso o el centésimo, estamos aquí para hacer tu viaje inolvidable.",
+            detailText = "Estás a solo un paso de disfrutar de todo lo que hemos preparado para ti.",
             buttonText = "Empezar",
-            descriptionOfImage = "Page 3"
+            descriptionOfImage = "Página 3"
         )
     )
 }
